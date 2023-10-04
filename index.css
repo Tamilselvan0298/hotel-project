@@ -1,0 +1,341 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:sans-serif;
+    width: 100%;
+    height: 100%;
+overflow-x:hidden;
+line-height: 20px;
+}
+h1,h2{
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.flex{
+    display: flex;
+}
+.mainpage{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    border: none;
+    background: none;
+    outline:none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.book{
+    padding: 15px 40px;
+    background: #7fc142;
+    font-weight: bold;
+    color:white;
+}
+header{
+    height: 100px;
+    line-height: 100px;
+    padding:0 20px;
+}
+header img{
+    margin:20px 0;
+}
+header ul{
+    display: inline-block;
+}
+header ul li{
+    display: inline-block;
+    text-transform: uppercase;
+}
+header ul li a{
+    color: #000;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+header ul li a:hover{
+    color:#7fc142;
+}
+header i{
+    margin:0 20px;
+}
+header button{
+    padding: 13px 40px;
+}
+header .menu span{
+    display:none;
+}
+.main{
+    position: relative;
+    top:70px;
+    width: 100%;
+    height: 400px;
+    background-image: url(pics/front.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: -50px;
+    background-position:center;
+
+}
+.main > h2 {
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch:extra-expanded;
+    color:white;
+    backdrop-filter: blur(1px) brightness(80%);
+    text-align:center;
+    height: 50%;
+    align-items: center;
+    position: relative;
+    top:50%;
+}
+#aboutus{
+    width: 100%;
+    height:300px;
+    color: white;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    line-height: 50px;
+    background-image: url(pics/sideview.jpg);
+    position: relative;
+    top: 50px;
+}
+#contactus{
+    width: 100%;
+    height:350px;
+    color: black;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    line-height: 5px;
+    background-image: url(pics/logo2.png);
+    background-size: 250px 250px;
+    background-repeat: no-repeat;
+    background-position:right;
+
+}
+footer{ position: relative;
+    top: 50px;
+    padding: 10px;}
+.icons{
+   display: inline-block;
+   line-height: 5px;
+   position:sticky;
+   bottom: 200px;
+   left: 0;
+}
+#contactus > .address
+{
+    position: relative;
+    top:0;
+    left:50px;
+    line-height: 40px;
+    overflow: hidden;
+}
+footer{
+    background-color: #7fc142;
+}
+#room1{
+    position: relative;
+    top:50px;
+}
+#room{
+    width:100%;
+    height:270px;
+display: inline-flex;
+overflow-x: scroll;}
+#room::-webkit-scrollbar{
+    width: 0px;
+    height:10px;
+}
+#room::-webkit-scrollbar-track{
+    background-color:burlywood;
+    border-radius: 5px;
+}
+#room::-webkit-scrollbar-thumb{
+    background-color: crimson;
+    border-radius: 5px;
+}
+.galleryimg{overflow-x: scroll;}
+.galleryimg::-webkit-scrollbar{
+    width: 0px;
+    height: 10px;
+}
+.galleryimg::-webkit-scrollbar-track{
+    background-color:burlywood;
+    border-radius: 5px;
+}
+.galleryimg::-webkit-scrollbar-thumb{
+    background-color: crimson;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+}
+#r1,#r2,#r3,#r4,#r5{
+    width: 400px;
+    height: 200px;
+    border-radius: 20px 20px 20px 20px ;
+    padding-left: 5px;
+}
+#r1-1{
+    font-size: larger;
+}
+#r1-1:hover{
+color:#7fc142;
+}
+#gallery{
+    position: relative;
+    top:50px;}
+.galleryimg{
+    display: inline-flex;
+    width: 100%;
+    height: 360px;
+    overflow:scroll;
+    gap: 5px;
+}
+
+#g1:hover{
+    transform: scale(2.5 );
+}
+#g2:hover{
+    transform: scale(2.5);
+}
+#g3:hover{
+    transform: scale(2.5);
+}
+#g4:hover{
+    transform: scale(2.5);
+}
+#g5:hover{
+    transform: scale(2.5);
+}
+#g6:hover{
+    transform: scale(2.5);
+}
+#food{
+    width:50%;
+    height: 300px;
+    animation-name: food;
+    padding-left: 10px;
+    border-radius: 10px;
+    animation-duration: 20s;
+    background-image: url(pics/food5.jpg);
+    background-size: cover;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay:15s;}
+@keyframes food{
+    0% {background-image: url(pics/food1.webp);}
+    25% {background-image: url(pics/food3.jpg);}
+    50% {background-image: url(pics/food.jpg);}
+    75% {background-image: url(pics/food4.jpg);}
+    100% {background-image: url(pics/food5.jpg);}
+}
+#pub{
+    width:50%;
+    height: 300px;
+    animation-name: pub;
+    border-radius: 10px;
+    animation-duration: 20s;
+    background-image: url(pics/pub1.jpg);
+    background-size: cover;
+    animation-iteration-count: infinite;
+    animation-delay:3s;}
+@keyframes pub{
+    0% {background-image: url(pics/pub1.jpg);}
+    25% {background-image: url(pics/pub2.jpg);}
+    50% {background-image: url(pics/pub3.jpg);}
+    100% {background-image: url(pics/pub4.jpg);}
+    
+}
+#games{
+    position: relative;
+    left: 0;
+    width:50%;
+    height: 300px;
+    animation-name: games;
+    border-radius: 10px;
+    animation-duration: 20s;
+    background-image: url(pics/game1.jpg);
+    background-size: cover;
+    animation-iteration-count: infinite;
+    animation-delay:3s;}
+@keyframes games {
+    0% {background-image: url(pics/game1.jpg);}
+    25% {background-image: url(pics/game2.jpg);}
+    50% {background-image: url(pics/game3.jpg);}
+    75% {background-image: url(pics/game4.jpg);}
+    100% {background-image: url(pics/game5.webp);}
+    
+}
+#gym{
+    position: relative;
+    left: 10;
+    width:50%;
+    height: 300px;
+    animation-name: gym;
+    border-radius: 10px;
+    animation-duration: 20s;
+    background-image: url(pics/gym2.jpg);
+    background-size: cover;
+    animation-iteration-count: infinite;
+    animation-delay:3s;}
+@keyframes gym {
+    0% {background-image: url(pics/gym.jpg);}
+    25% {background-image: url(pics/gym1.jpg);}
+    50% {background-image: url(pics/gym2.jpg);}
+    75% {background-image: url(pics/gym3.jpg);}
+    100% {background-image: url(pics/gym4.jpg);}
+    
+}
+.activity{
+    position: relative;
+    top:10px;
+    padding-left: 10px;
+    width: 100%;
+    gap: 10px;
+    display: inline-flex;
+}
+.activity2{
+    padding-left: 10px;
+    width: 100%;
+    gap: 10px;
+    display: inline-flex;
+}
+#activity1{
+    position: relative;
+    top:50px;}
+#leftside{
+    width: 50px;
+    height:20px;
+    background-color: #7fc142;
+    color: white;
+    border:1px solid black;
+    position: relative;
+    top:0;
+    left:1120px;
+}
+#rightside{
+    width: 50px;
+    height:20px;
+    background-color: #7fc142;
+    color: white;
+    border:1px solid black;
+    position: relative;
+    top:0;
+    left:1130px;
+    
+
+}
+
+
